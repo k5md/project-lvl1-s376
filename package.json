@@ -14,8 +14,8 @@
     "dist"
   ],
   "keywords": [
-    'logic',
-    'puzzle'
+    "logic",
+    "puzzle"
   ],
   "license": "ISC",
   "dependencies": {
