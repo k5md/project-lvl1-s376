@@ -10,10 +10,10 @@ const playGame = (currentRound = 0) => {
     return 'won';
   }
 
-  const number = randomInt(1, 1000);
-  const correctAnswer = isEven(number) ? 'yes' : 'no';
+  const question = randomInt(1, 1000);
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
 
-  console.log(`Question: ${number}`);
+  console.log(`Question: ${question}`);
   const userAnswer = readlineSync.question('Your answer: ');
 
   if (userAnswer !== correctAnswer) {
