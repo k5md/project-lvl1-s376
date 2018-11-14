@@ -16,7 +16,7 @@
   "keywords": [
     'logic',
     'puzzle'
-  ]
+  ],
   "license": "ISC",
   "dependencies": {
     "readline-sync": "^1.4.9"
