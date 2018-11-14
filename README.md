@@ -10,6 +10,7 @@ This is a set of puzzle games to play in console mode.
 ## Which games are available?
 
 - even
+- calc
 
 ## Installation and usage
 To install, you can use [npm](https://npmjs.org/):
@@ -25,3 +26,4 @@ $ brain-even
 Just like this:
 
 [![asciicast](https://asciinema.org/a/cp9EuNJ9oxI7nG0DAStO5BmBy.svg)](https://asciinema.org/a/cp9EuNJ9oxI7nG0DAStO5BmBy)
+[![asciicast](https://asciinema.org/a/v7j6gx5rEReAGSNxB7xhb7eZK.svg)](https://asciinema.org/a/v7j6gx5rEReAGSNxB7xhb7eZK)
