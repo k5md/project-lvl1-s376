@@ -1,8 +1,7 @@
 {
   "name": "brain-games-s376",
-  "version": "1.1.1",
-  "description": "",
-  "main": "index.js",
+  "version": "1.1.2",
+  "description": "A set of logic games to play in console mode",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
@@ -14,13 +13,18 @@
   "files": [
     "dist"
   ],
-  "author": "",
+  "keywords": [
+    'logic',
+    'puzzle'
+  ]
   "license": "ISC",
   "dependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.5",
-    "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.1.5",
     "readline-sync": "^1.4.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.6"
   }
 }
