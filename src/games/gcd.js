@@ -7,11 +7,14 @@ const gcd = (a, b) => {
   return gcd(b, r);
 };
 
+const minNumber = -100;
+const maxNumber = 100;
+
 const rules = {
   objective: 'Find the greatest common divisor of given numbers.',
   playRound() {
-    const a = randomInt(-100, 100);
-    const b = randomInt(-100, 100);
+    const a = randomInt(minNumber, maxNumber);
+    const b = randomInt(minNumber, maxNumber);
 
     const question = `${a} ${b}`;
     const correctAnswer = String(gcd(a, b));

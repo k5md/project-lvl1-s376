@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
 
+const maxRounds = 3;
+
 export default (gameset) => {
   console.log('Welcome to the Brain Games!');
 
@@ -8,7 +10,6 @@ export default (gameset) => {
 
   console.log(gameset.objective);
 
-  const maxRounds = 3;
   for (let i = 0; i < maxRounds; i += 1) {
     const { question, correctAnswer } = gameset.playRound();
 
