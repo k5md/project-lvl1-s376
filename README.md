@@ -12,6 +12,7 @@ This is a set of puzzle games to play in console mode.
 - even
 - calc
 - gcd
+- progression
 
 ## Installation and usage
 To install, you can use [npm](https://npmjs.org/):
@@ -34,3 +35,6 @@ Just like this:
 
 - brain-gcd
 [![asciicast](https://asciinema.org/a/KTk1o3nBrxMJuEf6p9srSLN3i.svg)](https://asciinema.org/a/KTk1o3nBrxMJuEf6p9srSLN3i)
+
+- brain-progression
+[![asciicast](https://asciinema.org/a/eOwlR9OVu8FLWbtIsggjQtTq4.svg)](https://asciinema.org/a/eOwlR9OVu8FLWbtIsggjQtTq4)
