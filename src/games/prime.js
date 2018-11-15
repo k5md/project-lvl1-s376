@@ -1,36 +1,26 @@
 import game from '..';
 import randomInt from '../utils';
 
-const generateSieve = (n) => {
-  const upperBound = n / 2;
+const isPrime = (n) => {
+  if (n < 2) return false;
 
-  const allNumbers = Array.from({ length: n }, (cur, idx) => idx + 2);
-  const sieve = new Set(allNumbers);
-  const sieveIterator = sieve[Symbol.iterator]();
-
-  let primeCandidate = sieveIterator.next().value;
-  while (primeCandidate) {
-    for (let multiplier = 2; multiplier < upperBound; multiplier += 1) {
-      const multiple = primeCandidate * multiplier;
-      sieve.delete(multiple);
+  const upperBound = Math.floor(Math.sqrt(n));
+  for (let i = 2; i <= upperBound; i += 1) {
+    if (n % i === 0) {
+      return false;
     }
-    primeCandidate = sieveIterator.next().value;
   }
-
-  return sieve;
+  return true;
 };
 
-const sieveMaxNumber = 5000;
+const minNumber = 1;
+const maxNumber = 4000;
 
 const rules = {
   objective: 'Answer "yes" if given number is prime. Otherwise answer "no".',
   playRound() {
-    const primes = generateSieve(sieveMaxNumber);
-    const maxNumber = primes.size * 2;
-
-    const question = randomInt(1, maxNumber);
-    const correctAnswer = primes.has(question) ? 'yes' : 'no';
-
+    const question = randomInt(minNumber, maxNumber);
+    const correctAnswer = isPrime(question) ? 'yes' : 'no';
     return { question, correctAnswer };
   },
 };
