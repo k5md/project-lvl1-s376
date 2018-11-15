@@ -6,13 +6,10 @@ export default (gameset) => {
   const name = readlineSync.question('May I have your name?');
   console.log(`Hello, ${name}`);
 
-  if (!gameset) {
-    return;
-  }
-
   console.log(gameset.objective);
 
-  for (let i = 0; i < gameset.maxRounds; i += 1) {
+  const maxRounds = 3;
+  for (let i = 0; i < maxRounds; i += 1) {
     const { question, correctAnswer } = gameset.playRound();
 
     console.log(`Question: ${question}`);
@@ -25,9 +22,7 @@ export default (gameset) => {
     }
 
     console.log('Correct!');
-
-    if (i === gameset.maxRounds - 1) {
-      console.log(`Congratulations, ${name}!`);
-    }
   }
+
+  console.log(`Congratulations, ${name}!`);
 };
