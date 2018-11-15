@@ -16,7 +16,7 @@ const rules = {
     const step = randomInt(minNumber, maxNumber);
 
     const progression = generateArithmeticProgression(start, step, progressionLength);
-    const hiddenNumberIdx = randomInt(0, progressionLength);
+    const hiddenNumberIdx = randomInt(0, progressionLength - 1);
 
     const correctAnswer = String(progression[hiddenNumberIdx]);
     const question = progression.map((cur, idx) => (idx !== hiddenNumberIdx ? cur : '..')).join(' ');
