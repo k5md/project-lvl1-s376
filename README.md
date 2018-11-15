@@ -13,6 +13,7 @@ This is a set of puzzle games to play in console mode.
 - calc
 - gcd
 - progression
+- prime
 
 ## Installation and usage
 To install, you can use [npm](https://npmjs.org/):
